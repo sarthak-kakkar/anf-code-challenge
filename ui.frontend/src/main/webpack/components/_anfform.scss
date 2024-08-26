@@ -1,0 +1,21 @@
+.anf-form {
+  width: fit-content;
+  background-color: #000000;
+  color: #ffffff;
+  @media screen and (min-width: 769px) {
+    background-color: #d3d3d3;
+    color: #000000;
+  }
+}
+
+.anf-results {
+  display: none;
+  th,td {
+    border: 1px solid;
+    padding: 8px 10px;
+  }
+}
+
+.anf-empty {
+  display: none;
+}

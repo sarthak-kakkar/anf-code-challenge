@@ -3,5 +3,5 @@
 import "./main.scss";
 
 // Javascript or Typescript
-import "./**/*.js";
+import "../**/*.js";
 import "./**/*.ts";

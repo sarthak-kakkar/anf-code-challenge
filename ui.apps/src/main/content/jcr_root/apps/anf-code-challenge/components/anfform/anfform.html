@@ -1,0 +1,29 @@
+<sly data-sly-use.model="com.anf.core.models.AnFFormModel" xmlns="http://www.w3.org/1999/html"/>
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
+<sly data-sly-call="${templates.placeholder @ isEmpty = wcmmode.edit && !model.buttontext}"></sly>
+
+<div class="anf-form" data-sly-test=${model.buttontext}>
+    <form>
+        <label for="fulltext">${model.inputlabel}</label>
+        <input id="fulltext" type="text" name="fulltext" placeholder="${model.inputlabel}" required>
+        <input type="submit" value="${model.buttontext}">
+    </form>
+
+    <table class="anf-results">
+        <caption>
+            Results
+        </caption>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Image</th>
+                <th>Last Modified Date</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <p class="anf-empty">No Results Found</p>
+</div>

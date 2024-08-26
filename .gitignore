@@ -79,3 +79,4 @@ buildNumber.properties
 ui.apps/node_modules/
 ui.frontend/node_modules/
 ui.frontend/node/
+ui.frontend/dist/
